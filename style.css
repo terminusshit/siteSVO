@@ -1,0 +1,742 @@
+/* Базовые стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    color: #426B1F;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Навигация */
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #5b8850;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background-color: #4a6f42;
+}
+
+nav a.active {
+    background-color: #ff0000;
+}
+
+/* Основное содержимое */
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.content h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 950px;
+}
+
+/* Форма */
+.form-container {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1.5px solid #333;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #5b8850;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #4a6f42;
+}
+.checkbox-container label {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    accent-color: #5b8850;
+}
+
+.checkbox-container a {
+    color: #000000;
+}
+
+.checkbox-container a:hover {
+    text-decoration: underline;
+}
+/* Таблица услуг */
+.services-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.services-table td {
+    padding: 0; /* Убираем внутренние отступы */
+    border: 7px solid rgb(243, 243, 243);
+    border-radius: 47px;
+    text-align: center;
+    vertical-align: top;
+    overflow: hidden; /* Скрываем всё, что выходит за границы */
+    position: relative; /* Для работы с псевдоэлементами */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Стили для кнопок */
+.service-btn {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #5bcc50;
+    border: none;
+    border-radius: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-btn img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.service-btn p {
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+}
+
+.service-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.service-btn:active {
+    transform: scale(0.95);
+}
+
+.main-title {
+    text-align: center; 
+    font-size: 40px; 
+    color: #000000; 
+    margin: 20px 0; 
+    font-weight: bold; 
+}
+.benefits-title {
+    font-size: 30px; 
+    font-weight: bold; 
+    color: #000000; 
+    text-align: center; 
+    margin: 20px 0 10px; 
+    position: relative; 
+}
+
+.benefits-title::after {
+    content: ""; 
+    display: block;
+    width: 50%; 
+    height: 3px; 
+    background-color: #426B1F; 
+    margin: 10px auto 0; 
+}
+
+
+/* Контакты */
+.contact-section {
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+    color: #333;
+    margin-top: auto;
+}
+
+.contact-section h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-info div {
+    font-size: 16px;
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh; 
+} */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Герои */
+.hero_img img {
+    width: 225px;
+    height: 300px;
+    position: relative;
+    top: 0px;
+    margin-top: 25px;
+    cursor: pointer;
+    border: 5px solid #426B1F; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.column {
+    top: 50px;
+    float: left;
+    width: 450px;
+    text-align: center;
+}
+
+.hero-name {
+    font-size: 15; 
+    font-weight: bold; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+.modal-content p {
+    margin: 5px 0;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+/* цитата в героях */
+
+.quote-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left-container {
+    flex: 1.5; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.right-container {
+    flex: 1;
+    text-align: left;
+}
+
+.big-quotes-left {
+    font-size: 70px; 
+    color: #000000;
+    position: absolute;
+    top: -10px; 
+    left: 1px;
+}
+
+.big-quotes-right {
+    font-size: 70px; 
+    color: #000000;
+    position: absolute;
+    bottom: -40px; 
+    right: -20px;
+}
+
+.quote-text {
+    font-size: 25px;
+    font-style: italic;
+    color: #000000;
+    display: inline-block;
+    line-height: 1.4;
+    margin-left: 20px; 
+}
+
+.author {
+    font-size: 20px;
+    color: #000000;
+    margin-top: 1px;
+}
+
+.quote-line {
+    width: 80%;
+    height: 3px;
+    background-color: #000000af;
+    margin: 20px auto 0;
+}
+
+.quote h1 {
+    font-size: 40px;       
+    text-align: center;     
+    color: #000000;           
+    margin: 20px 0;        
+}
+
+/* главная */
+/* Стили для баннера */
+.banner {
+    background-image: url('img/index_img/war.jpg'); 
+    background-size: cover;  
+    background-position: center;  
+    background-attachment: fixed; 
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    min-height: 400px; 
+}
+
+/* Контейнер с контентом внутри баннера */
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Заголовок баннера */
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Подзаголовок или описание */
+.banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Кнопка */
+.btn {
+    background-color: #426B1F;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #365B16;
+}
+
+/* Оформление секции на странице "Мы можем оказать помощь в" */
+.support-section {
+    background-color: #f4f4f4; /* Легкий серый фон для секции */
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+/* Контейнер для выравнивания контента */
+.support-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Заголовок секции */
+.support-section .section-title {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #2c3e50; /* Темно-синий цвет */
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Описание секции */
+.support-section .section-description {
+    font-size: 18px;
+    color: #555; /* Цвет текста для лучшей читаемости */
+    line-height: 1.8;
+    text-align: center;
+    max-width: 800px;
+    margin: 10px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Подчеркивание внизу заголовка секции */
+.support-section .section-title::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #426B1F;
+    margin: 10px auto 0;
+}
+
+/* Таблица с картинками и текстом */
+.support-section .help-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.support-section .help-table .box {
+    background-color: #e4f7e1;
+    border: 1px solid #4CAF50;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50;
+    border-radius: 5px;
+}
+
+.support-section .help-table .box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* Картинка */
+.support-section .help-content .image {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.support-section .help-content .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Текст */
+.support-section .help-content .text {
+    flex: 1.5;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+/* Секция помощи */
+.help-section {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+}
+
+/* Контейнер */
+.help-section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Заголовок */
+.help-section__title {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+/* Таблица с картинками и текстом */
+.help-section__table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* Ряды */
+.help-section__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.help-section__box {
+    background-color: #e4f7e1;
+    border: 1px solid #4CAF50;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50;
+    border-radius: 5px;
+    flex-basis: 32%;
+    box-sizing: border-box;
+}
+
+.help-section__box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Контейнер с картинкой и текстом */
+.help-section__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* Картинка */
+.help-section__image {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.help-section__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Текст */
+.help-section__text {
+    flex: 1.5;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+.help-section__title::after {
+    content: "";
+    display: block;
+    width: 50%; /* Ширина полосы */
+    height: 2px; /* Толщина полосы */
+    background-color: #426B1F; /* Цвет полосы */
+    margin: 10px auto 0; /* Отступы для центрации */
+}
+
+/* Адаптация для планшетов и смартфонов */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-table {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .services-table td {
+        padding: 15px;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 380px) {
+    .banner {
+        background-image: url('img/index_img/war.jpg'); 
+        background-size: cover;  
+        background-position: center center; 
+        background-attachment: fixed; 
+        padding: 80px 20px;
+        text-align: center;
+        color: white;
+        min-height: 400px; 
+background-repeat: no-repeat; 
+    }
+    
+
+    .banner-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+
+    .banner h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    /* Подзаголовок или описание */
+    .banner p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    /* Кнопка */
+    .btn {
+        background-color: #426B1F;
+        color: white;
+        padding: 15px 30px;
+        font-size: 18px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+        background-color: #365B16;
+    }
+    
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .content h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .services-table td {
+        padding: 10px;
+    }
+
+    .services-table img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact-info div {
+        font-size: 14px;
+    }
+}

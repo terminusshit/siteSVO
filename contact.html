@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Герой и семья</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+<header>
+    <h1>Герой и семья</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="benefits.html">Льготы</a>
+        <a href="ourhero.html">Наши герои</a>
+        <a href="contacts.html" class="active">Контакты</a>
+    </nav>
+</header>
+
+<div class="content">
+    <div>
+        <h2>ОСТАЛИСЬ ВОПРОСЫ ПО МЕРАМ ПОДДЕРЖКИ?</h2>
+        <p>Вы можете оставить обращение на сайте или позвонить по номеру Горячей линии 117. Наши специалисты ответят на все интересующие вас вопросы и помогут оформить необходимые документы.</p>
+    </div>
+    <div class="form-container">
+        <form action="save_form.php" method="post">
+            <label for="category">Категория обратившегося</label>
+            <input type="text" id="category" name="category" required>
+
+            <label for="topic">Тематика вопроса</label>
+            <input type="text" id="topic" name="topic" required>
+
+            <label for="question">Ваш вопрос</label>
+            <textarea id="question" name="question" rows="3" required></textarea>
+
+            <label for="fullname">ФИО<font color="red">*</font></label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="phone">Номер телефона<font color="red">*</font></label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="email">Электронная почта<font color="red">*</font></label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label style="font-size: 12px" for="consent">Согласен на обработку <a href="soglasie.html" target="_blank">персональных данных</a></label>
+            </div>
+            <button type="submit" class="submit-button">Отправить заявку</button>
+        </form>
+    </div>
+</div>
+</div>
+<div class="footer">
+<div class="contact-section">
+    <h3>Контакты разработчиков</h3>
+    <div class="contact-info">
+        <div><a href="">Гусева Елизавета</a></div>
+    </div>
+    <div class="footer-text">Пенза - КТ ПензГТУ - 2024</div>
+</div>
+</div>
+</body>
+</html>
